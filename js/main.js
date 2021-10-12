@@ -1,6 +1,8 @@
 
 var prevScrollpos = window.pageYOffset;
 const tabletBreakpoint = 1025;
+const homeBreakpoint = 1465;
+
 
 window.onscroll = () => {
     var screenWidth = window.innerWidth;

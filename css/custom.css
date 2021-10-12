@@ -949,15 +949,15 @@ section.breadcrumbs {
   margin-bottom: 1.25em;
 }
 
+@media screen and (max-width: 500px) {
+  .home-banner .banner-content .home-banner-title h1 {
+    font-size: 2.75em;
+  }
+}
+
 .home-banner .banner-content .home-banner-cta {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
           animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-}
-
-@media screen and (max-width: 767px) {
-  .home-banner .banner-content {
-    margin-top: -50px;
-  }
 }
 
 .home-services {

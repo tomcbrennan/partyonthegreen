@@ -53,16 +53,16 @@
                         </h2>
                         <div class="contact-details">
                             <a href="mailto:<?php the_field('email_address', 'option'); ?>" target="_blank">
-                                <h4>
+                                <p>
                                     <i class="fas fa-envelope"></i>
                                     <?php the_field('email_address', 'option'); ?>
-                                </h4>
+                                </p>
                             </a>
                             <a href="tel:<?php the_field('phone_number', 'option'); ?>" target="_blank">
-                                <h4>
+                                <p>
                                     <i class="fas fa-phone-alt"></i>
                                     <?php the_field('phone_number', 'option'); ?>
-                                </h4>
+                                </p>
                             </a>
                         </div>
                         <div class="contact-socials">
