@@ -78,7 +78,7 @@
                     'name' => __( 'Testimonials' ),
                     'singular_name' => __( 'Testimonial' )
                 ),
-                'public' => true,
+                'exclude_from_search' => true,
                 'has_archive' => false,
                 'supports' => array( 'title', 'editor'),
                 'show_in_rest' => true,

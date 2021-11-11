@@ -900,6 +900,12 @@ section.breadcrumbs {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .home-banner {
+    height: 700px;
+  }
+}
+
 .home-banner:after {
   content: '';
   position: absolute;
