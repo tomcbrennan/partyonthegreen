@@ -39,7 +39,7 @@
         <div class="grid">
             <div class="content">
                 <h2>Check out what services we offer!</h2>
-                <a class="btn btn-secondary" href="/services">
+                <a class="btn btn-secondary" href="<?php echo get_post_type_archive_link('service'); ?>">
                     Our Services
                 </a>
             </div>

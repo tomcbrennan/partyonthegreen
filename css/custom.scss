@@ -962,6 +962,22 @@ section.breadcrumbs {
                 }
             }
         }
+
+        .partners {
+            display: grid;
+            grid-gap: 1rem;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 4em;
+
+            .partner {
+
+                img {
+                    height: 100px;
+                    opacity: 0.4;
+                }
+            }
+        }
     }
 }
 

@@ -1128,6 +1128,21 @@ section.breadcrumbs {
   }
 }
 
+.home-about .content .partners {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  place-items: center;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 4em;
+}
+
+.home-about .content .partners .partner img {
+  height: 100px;
+  opacity: 0.4;
+}
+
 .socials-banner {
   position: relative;
   background: #fff;
@@ -2388,4 +2403,3 @@ section.breadcrumbs {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=custom.css.map */

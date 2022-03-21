@@ -24,13 +24,11 @@ window.onscroll = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  if(window.innerWidth < tabletBreakpoint){
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      document.querySelector('.hamburger').classList.toggle('hamburger-menu-active');
-      document.querySelector('.mobile-navigation').classList.toggle('mobile-nav-active');
-      document.querySelector('.mobile-navigation-contact').classList.toggle('mobile-nav-contact-active');
-      document.body.classList.toggle('menu-active');
-    });
-  }
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.hamburger').classList.toggle('hamburger-menu-active');
+    document.querySelector('.mobile-navigation').classList.toggle('mobile-nav-active');
+    document.querySelector('.mobile-navigation-contact').classList.toggle('mobile-nav-contact-active');
+    document.body.classList.toggle('menu-active');
+  });
 
 });

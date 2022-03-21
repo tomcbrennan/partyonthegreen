@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Party On The Green</title>
 </head>
-    <body>
+    <body <?php body_class(); ?>>
         <header class="header">
             <div class="grid">
                 <div class="content">
-                    <a class="logo" href="/home">
-                        <img src="https://development.partyonthegreen.com.au/wp-content/uploads/2021/08/potg-logo.svg" alt="Party On The Green">
+                    <a class="logo" href="<?php echo esc_url(get_page_link( 14 )); ?>">
+                        <img src="https://partyonthegreen.com.au/wp-content/uploads/2021/08/potg-logo.svg" alt="Party On The Green">
                     </a>  
                     <nav class="main-navigation desktop-navigation">
                         

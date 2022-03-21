@@ -106,6 +106,11 @@
         
     }
 
+    add_filter( 'forminator_replace_variables', 'do_shortcode' );
 
+    // shove YOAST settings panel in editor to bottom 
+    add_filter( 'wpseo_metabox_prio', function() { 
+        return 'low'; 
+    });
     
 ?>

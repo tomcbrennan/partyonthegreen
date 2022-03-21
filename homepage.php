@@ -21,7 +21,7 @@
                 <h1><?php the_field('home_banner_heading'); ?></h1>
             </div>
             <div class="home-banner-cta">
-                <a class="btn btn-secondary" href="/services">View Our Services</a>
+                <a class="btn btn-secondary" href="<?php echo get_post_type_archive_link('service'); ?>">View Our Services</a>
             </div>
         </div>
     </div>
@@ -49,14 +49,12 @@
                         
                         <?php if ( $services->have_posts() ) : ?>
                         
-                            <!-- the loop -->
                             <?php while ( $services->have_posts() ) : $services->the_post(); ?>
                                 <a href="<?php the_permalink(); ?>" class="services-tile">
                                     <h3><?php the_title(); ?></h3>
                                     <img src="<?php the_post_thumbnail_url(); ?>">
                                 </a>
                             <?php endwhile; ?>
-                            <!-- end of the loop -->
                         
                             <?php wp_reset_postdata(); ?>
                         
@@ -84,9 +82,26 @@
                         <div class="text-container">
                             <?php the_field('about_us_text');?>
                         </div>
-                        <a class="btn btn-primary" href="/about-us">More About Us</a>
+                        <a class="btn btn-primary" href="<?php echo esc_url(get_page_link(19)); ?>">More About Us</a>
                     </div>
                 </div>
+                <?php
+
+                if( have_rows('partners') ): ?>
+                    <div class="partners">
+                        <?php while( have_rows('partners') ) : the_row(); ?>
+
+                            <?php $partner = get_sub_field('partner'); ?>
+                            <?php $url = $partner['url']; ?>
+                            <?php $partner_alt = $partner['alt']; ?>
+
+                            <div class="partner">
+                                <img src="<?php echo $url; ?>" alt="<?php echo esc_attr($partner_alt); ?>">
+                            </div>
+
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -134,7 +149,7 @@
                     <a href="/gallery" class="btn btn-primary home-gallery-btn-desktop">View Full Gallery</a>
                 </div>
                 <?php the_content(); ?>
-                <a href="/gallery" class="btn btn-primary home-gallery-btn-mobile">View Full Gallery</a>
+                <a href="<?php echo get_post_type_archive_link('gallery'); ?>" class="btn btn-primary home-gallery-btn-mobile">View Full Gallery</a>
             </div>
         </div>
     </section>
