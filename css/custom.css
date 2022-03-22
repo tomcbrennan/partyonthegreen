@@ -1133,8 +1133,8 @@ section.breadcrumbs {
   display: grid;
   grid-gap: 1rem;
   place-items: center;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin-top: 4em;
 }
 
