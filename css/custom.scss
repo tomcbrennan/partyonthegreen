@@ -626,94 +626,100 @@ section.breadcrumbs {
 
 .footer {
     width: 100vw;
-    padding: 2em 0;
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(121, 45%, 36%, 1)'/><path d='M-10-10A10 10 0 00-20 0a10 10 0 0010 10A10 10 0 010 0a10 10 0 00-10-10zM10-10A10 10 0 000 0a10 10 0 0110 10A10 10 0 0120 0a10 10 0 00-10-10zM30-10A10 10 0 0020 0a10 10 0 0110 10A10 10 0 0140 0a10 10 0 00-10-10zM-10 10a10 10 0 00-10 10 10 10 0 0010 10A10 10 0 010 20a10 10 0 00-10-10zM10 10A10 10 0 000 20a10 10 0 0110 10 10 10 0 0110-10 10 10 0 00-10-10zM30 10a10 10 0 00-10 10 10 10 0 0110 10 10 10 0 0110-10 10 10 0 00-10-10z'  stroke-width='1' stroke='none' fill='hsla(122, 44%, 34%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-color: #328534;
 
-    .grid {
-        animation: none;
+    .footer-inner {
+        width: 100%;
+        height: 100%;
+        padding: 2em 0;
+        background-image: url(../images/footer-bg.svg);
 
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .grid {
+            animation: none;
     
-            @media screen and (max-width: 768px) {
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-            }
-    
-            .logo {
+            .content {
                 display: flex;
                 align-items: center;
-                margin-left: -5px;
-                
-                img {
-                    width: 150px;
-                }
-    
+                justify-content: space-between;
+        
                 @media screen and (max-width: 768px) {
-                    padding: 1em 0;
-                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
-            }
-    
-            .contact-details {
-                display: flex;
-                flex-direction: column;
-                
-                a {
-                    color: $color-white;
-                    margin-bottom: 20px;
+        
+                .logo {
                     display: flex;
                     align-items: center;
-    
+                    margin-left: -5px;
+                    
+                    img {
+                        width: 150px;
+                    }
+        
                     @media screen and (max-width: 768px) {
+                        padding: 1em 0;
                         justify-content: center;
                     }
-    
+                }
+        
+                .contact-details {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    a {
+                        color: $color-white;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+        
+                        @media screen and (max-width: 768px) {
+                            justify-content: center;
+                        }
+        
+                        i {
+                            color: $color-white;
+                            margin-right: 10px;
+                        }
+        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+        
+                    @media screen and (max-width: 768px) {
+                        padding: 1em 0;
+                        justify-content: center;
+                    }
+                }
+        
+                .footer-navigation {
+                    li {
+                        margin-bottom: 0.5em;
+        
+                        a {
+                            color: $color-white;
+                        }
+                    }
+        
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+        
+                .socials {
+                    display: flex;
+                    align-items: center;
+        
                     i {
                         color: $color-white;
                         margin-right: 10px;
                     }
-    
-                    &:last-child {
-                        margin-bottom: 0;
+        
+                    @media screen and (max-width: 768px) {
+                        padding: 1em 0;
+                        justify-content: center;
                     }
-                }
-    
-                @media screen and (max-width: 768px) {
-                    padding: 1em 0;
-                    justify-content: center;
-                }
-            }
-    
-            .footer-navigation {
-                li {
-                    margin-bottom: 0.5em;
-    
-                    a {
-                        color: $color-white;
-                    }
-                }
-    
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
-            }
-    
-            .socials {
-                display: flex;
-                align-items: center;
-    
-                i {
-                    color: $color-white;
-                    margin-right: 10px;
-                }
-    
-                @media screen and (max-width: 768px) {
-                    padding: 1em 0;
-                    justify-content: center;
                 }
             }
         }

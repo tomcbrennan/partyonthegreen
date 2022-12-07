@@ -1,34 +1,36 @@
         <footer class="footer">
-            <div class="grid">
-                <div class="content">
-                    <a class="logo" href="?p=14">
-                        <img src="https://development.partyonthegreen.com.au/wp-content/uploads/2021/08/potg-logo.svg" alt="Party On The Green">
-                    </a>
-                    <div class="contact-details">
-                        <a href="mailto:<?php the_field('email_address', 'option'); ?>" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                            <?php the_field('email_address', 'option'); ?>
+            <div class="footer-inner">
+                <div class="grid">
+                    <div class="content">
+                        <a class="logo" href="?p=14">
+                            <img src="https://development.partyonthegreen.com.au/wp-content/uploads/2021/08/potg-logo.svg" alt="Party On The Green">
                         </a>
-                        <a href="tel:<?php the_field('phone_number', 'option'); ?>" target="_blank">
-                            <i class="fas fa-phone-alt"></i>
-                            <?php the_field('phone_number', 'option'); ?>
-                        </a>
-                    </div>
-                    <nav class="main-navigation footer-navigation">
-                                
-                        <?php wp_nav_menu( array( 
-                            'theme_location' => 'footer', 
-                            'menu_class' => 'footer-navigation', 
-                            'fallback_cb' => false 
-                            )); ?>
-                    </nav>
-                    <div class="socials">
-                        <a href="<?php the_field('instagram', 'option'); ?>" target="_blank">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="<?php the_field('facebook', 'option'); ?>" target="_blank">
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a>
+                        <div class="contact-details">
+                            <a href="mailto:<?php the_field('email_address', 'option'); ?>" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                                <?php the_field('email_address', 'option'); ?>
+                            </a>
+                            <a href="tel:<?php the_field('phone_number', 'option'); ?>" target="_blank">
+                                <i class="fas fa-phone-alt"></i>
+                                <?php the_field('phone_number', 'option'); ?>
+                            </a>
+                        </div>
+                        <nav class="main-navigation footer-navigation">
+                                    
+                            <?php wp_nav_menu( array( 
+                                'theme_location' => 'footer', 
+                                'menu_class' => 'footer-navigation', 
+                                'fallback_cb' => false 
+                                )); ?>
+                        </nav>
+                        <div class="socials">
+                            <a href="<?php the_field('instagram', 'option'); ?>" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="<?php the_field('facebook', 'option'); ?>" target="_blank">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
